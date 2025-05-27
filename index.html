@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Campo à Cidade: História do Paraná</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+        
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-green-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-leaf text-2xl text-green-300"></i>
+                <h1 class="text-xl font-bold">Do Campo a Cidade</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#inicio" class="hover:text-green-300 transition">Início</a></li>
+                    <li><a href="#historia" class="hover:text-green-300 transition">História</a></li>
+                    <li><a href="#campo" class="hover:text-green-300 transition">O Campo</a></li>
+                    <li><a href="#cidade" class="hover:text-green-300 transition">A Cidade</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-xl" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-green-800 py-2" id="mobileMenu">
+            <ul class="flex flex-col items-center space-y-3">
+                <li><a href="#inicio" class="hover:text-green-300 transition">Início</a></li>
+                <li><a href="#historia" class="hover:text-green-300 transition">História</a></li>
+                <li><a href="#campo" class="hover:text-green-300 transition">O Campo</a></li>
+                <li><a href="#cidade" class="hover:text-green-300 transition">A Cidade</a></li>
+                
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero text-white py-32 px-4 text-center parallax">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Do Campo à Cidade</h1>
+            <h2 class="text-2xl md:text-3xl mb-8">A Transformação Histórica do Paraná</h2>
+            <p class="text-lg md:text-xl mb-10">Explore a fascinante jornada de desenvolvimento do estado do Paraná, desde suas raízes rurais até as modernas metrópoles.</p>
+            <a href="#historia" class="bg-green-700 hover:bg-green-600 text-white px-8 py-3 rounded-full font-bold transition duration-300 inline-block">
+                Conheça a História
+            </a>
+        </div>
+    </section>
+
+    <!-- Quick Facts -->
+    <section class="bg-green-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-green-700 rounded-lg shadow-lg">
+                    <i class="fas fa-calendar-alt text-4xl mb-4 text-green-300"></i>
+                    <h3 class="text-xl font-bold mb-2">Criação do Estado</h3>
+                    <p class="text-gray-200">O Paraná foi elevado à categoria de província em 1853, separando-se de São Paulo.</p>
+                </div>
+                <div class="p-6 bg-green-700 rounded-lg shadow-lg">
+                    <i class="fas fa-users text-4xl mb-4 text-green-300"></i>
+                    <h3 class="text-xl font-bold mb-2">Diversidade Cultural</h3>
+                    <p class="text-gray-200">Colonizado por imigrantes europeus, indígenas e afrodescendentes.</p>
+                </div>
+                <div class="p-6 bg-green-700 rounded-lg shadow-lg">
+                    <i class="fas fa-chart-line text-4xl mb-4 text-green-300"></i>
+                    <h3 class="text-xl font-bold mb-2">Crescimento Econômico</h3>
+                    <p class="text-gray-200">De economia agrícola a polo industrial e tecnológico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- História Timeline -->
+    <section id="historia" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-green-900">Linha do Tempo do Paraná</h2>
+            
+            <div class="relative">
+                <!-- Linha vertical -->
+                <div class="hidden md:block absolute h-full w-1 bg-green-200 left-1/2 transform -translate-x-1/2"></div>
+                
+                <!-- Items da timeline -->
+                <div class="mb-12 md:w-1/2 ml-auto pl-8 md:pl-0 pr-8 relative timeline-item">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-700 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <span class="font-bold">1500</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-green-900">Período Colonial</h3>
+                        </div>
+                        <p class="text-gray-700">Os primeiros europeus chegam à região, habitada por indígenas das tribos Kaingang, Xokleng e Guarani. A exploração do território começa com as bandeiras paulistas.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-12 md:w-1/2 md:pr-8 pl-8 relative timeline-item">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-700 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <span class="font-bold">1853</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-green-900">Criação da Província</h3>
+                        </div>
+                        <p class="text-gray-700">O Paraná se separa da província de São Paulo, tornando-se uma província independente. Curitiba é escolhida como capital.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-12 md:w-1/2 ml-auto pl-8 md:pl-0 pr-8 relative timeline-item">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-700 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <span class="font-bold">1870</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-green-900">Imigração Europeia</h3>
+                        </div>
+                        <p class="text-gray-700">Chegam os primeiros imigrantes europeus (alemães, italianos, poloneses e ucranianos), que transformam a agricultura e a cultura do estado.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-12 md:w-1/2 md:pr-8 pl-8 relative timeline-item">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-700 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <span class="font-bold">1950</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-green-900">Industrialização</h3>
+                        </div>
+                        <p class="text-gray-700">O Paraná começa seu processo de industrialização, especialmente na região metropolitana de Curitiba, marcando a transição do campo para a cidade.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-12 md:w-1/2 ml-auto pl-8 md:pl-0 pr-8 relative timeline-item">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-700 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <span class="font-bold">Hoje</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-green-900">Paraná Moderno</h3>
+                        </div>
+                        <p class="text-gray-700">O estado se consolida como importante polo econômico do país, com forte setor agrícola, industrial e de serviços, além de referência em planejamento urbano.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Campo -->
+    <section id="campo" class="countryside text-white py-32 px-4 parallax">
+        <div class="max-w-4xl mx-auto bg-black bg-opacity-60 p-8 rounded-lg">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">As Raízes Rurais do Paraná</h2>
+            <p class="text-lg mb-6">O Paraná nasceu como uma sociedade essencialmente rural, com economia baseada na agricultura e pecuária. As vastas terras férteis e o clima favorável permitiram o desenvolvimento de culturas como o café, que foi o principal produto de exportação no século XIX.</p>
+            <p class="text-lg mb-6">As colônias de imigrantes europeus trouxeram novas técnicas agrícolas e diversificaram a produção, introduzindo culturas como trigo, uva e erva-mate, que se tornaram símbolos do estado.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                <div class="bg-white bg-opacity-20 p-3 rounded text-center">
+                    <i class="fas fa-coffee text-3xl mb-2"></i>
+                    <p>Café</p>
+                </div>
+                <div class="bg-white bg-opacity-20 p-3 rounded text-center">
+                    <i class="fas fa-bread-slice text-3xl mb-2"></i>
+                    <p>Trigo</p>
+                </div>
+                <div class="bg-white bg-opacity-20 p-3 rounded text-center">
+                    <i class="fas fa-leaf text-3xl mb-2"></i>
+                    <p>Erva-mate</p>
+                </div>
+                <div class="bg-white bg-opacity-20 p-3 rounded text-center">
+                    <i class="fas fa-wine-bottle text-3xl mb-2"></i>
+                    <p>Uva</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A Cidade -->
+    <section id="cidade" class="city text-white py-32 px-4 parallax">
+        <div class="max-w-4xl mx-auto bg-black bg-opacity-60 p-8 rounded-lg">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">A Urbanização do Paraná</h2>
+            <p class="text-lg mb-6">A partir da segunda metade do século XX, o Paraná passou por intenso processo de urbanização. Curitiba se destacou como modelo de planejamento urbano, com soluções inovadoras como o sistema de transporte integrado.</p>
+            <p class="text-lg mb-6">Outras cidades como Londrina, Maringá e Cascavel cresceram rapidamente, transformando-se em importantes centros regionais de comércio, indústria e serviços.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                <div class="bg-white bg-opacity-20 p-3 rounded text-center">
+                    <i class="fas fa-city text-3xl mb-2"></i>
+                    <p>Curitiba</p>
+                </div>
+                <div class="bg-white bg-opacity-20 p-3 rounded text-center">
+                    <i class="fas fa-building text-3xl mb-2"></i>
+                    <p>Londrina</p>
+                </div>
+                <div class="bg-white bg-opacity-20 p-3 rounded text-center">
+                    <i class="fas fa-university text-3xl mb-2"></i>
+                    <p>Maringá</p>
+                </div>
+                <div class="bg-white bg-opacity-20 p-3 rounded text-center">
+                    <i class="fas fa-industry text-3xl mb-2"></i>
+                    <p>Cascavel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-leaf text-2xl text-green-300"></i>
+                        <h3 class="text-xl font-bold">Samuel e Vitor</h3>
+                    </div>
+                    <p class="mt-2 text-gray-400">Do Campo à Cidade: A Transformação do Paraná</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 História do Paraná. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
